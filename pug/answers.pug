@@ -1,0 +1,24 @@
+mixin answer(answer, name)
+  label.answer
+    input(type="radio" required name=name value=answer.value).answer__input
+    span.answer__caption
+      span.answer__title!=answer.title
+      - if(answer.img)
+        img(src=answer.img, alt="").answer__image
+
+mixin answers(answers, name)
+  ul.answers
+    each answer in answers
+      li.answers__item
+        +answer(answer, name)
+
+mixin quest(quest)
+  p.quest
+    span.quest__title=quest.title
+    +answers(quest.answers, quest.title)
+
+mixin quests(data)
+  ul.quests
+    each quest in data
+      li
+        +quest(quest)

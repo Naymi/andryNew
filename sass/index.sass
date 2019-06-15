@@ -1,0 +1,76 @@
+// reset
+*:not(.default)
+  margin: 0
+  padding: 0
+
+  list-style: none
+
+  color: inherit
+summary
+  margin-bottom:  1em !important
+  padding-left: 10px !important
+
+  cursor: pointer
+details
+  margin-bottom:  1em !important
+  &
+    padding-left: 10px
+
+    border-left: 3px solid rgba(58, 133, 255, .5)
+
+@import 'grid'
+@import 'nav'
+@import 'header'
+@import 'fixed-nav'
+@import 'answer'
+@import 'btn'
+h2, h3, h4
+  display: inline
+
+  font-size: inherit
+  font-weight: 400
+html
+  background-image: url('/img/background.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+
+  font-family: 'Noto Sans', sans-serif
+  font-size: 20px
+.content
+  margin-left: 20px
+
+  &-paragraph
+    line-height: 1.5
+    &_center
+      width: max-content
+      margin: 0 auto
+  &-list
+    &__title
+      text-decoration: underline
+
+      line-height: 2
+  &-img
+    display: block
+
+    max-width: 100%
+    margin: 10px auto
+.text
+  &-underline
+    text-decoration: underline
+  &-center
+    text-align: center
+.imgContainer
+  display: grid
+  align-items: center
+
+  margin: 10px 0 
+
+  justify-items: center
+  grid-template-columns: 1fr 1fr
+  img
+    display: block
+    flex-grow: 1
+
+    max-width: 100%
+    margin: 0 10px
