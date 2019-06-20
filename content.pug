@@ -14,6 +14,9 @@ html(lang="ru")
         align-items: center;
         display: flex;
       }
+      video{
+        max-width: 100%
+      }
   body.container.container_center
     .wrapper
       header.header
@@ -74,7 +77,7 @@ html(lang="ru")
                         p.content-paragraph
                           | Относительная молекулярная (формульная) масса вещества — это физическая величина, равная отношению массы молекулы (формульной единицы) вещества к 1/12 части массы атома углерода
                         img(src="/img/formuls/1.jpg", alt="alt").content-img
-                        video(src="/videos/1.mp4")
+                        video(src="/videos/1.mp4" controls)
                   li.nav__sub-item
                     details
                       summary 
@@ -220,61 +223,61 @@ html(lang="ru")
                           Это уравнение называется уравнением состояния идеального газа.
                         p.content-paragraph.
                           Уравнение, устанавливающее связь между давлением, объемом и температурой газов, было получено французским физиком Бенуа Клапейроном (1799—1864). В форме (26.7) его впервые применил великий русский ученый Дмитрий Иванович Менделеев (1834—1907), поэтому уравнение состояния газа называется уравнением Менделеева — Клапейрона.
-                ol.nav__sub-list
-                  li.nav__sub-item
-                    details
-                      summary 
-                        h3.text-underline Изопроцессы
-                      .content
-                        ol.nav__sub-list
-                          li.nav__sub-item
-                            details
-                              summary 
-                                h4.text-underline Изотермический процесс
-                              .content
-                                p.content-paragraph.
-                                  Изотермическим процессом называется процесс, происходящий в неизменной массе газа при постоянной температуре. Запишем уравнение для двух состояний идеального газа: 
-                                p.content-paragraph.content-paragraph_center.
-                                  p1V1=νRT(1), p2V2=νRT (2).
-                                p.content-paragraph.
-                                  Разделим уравнение (2) на уравнение (1), получим уравнение изотермического процесса:
-                                p.content-paragraph.content-paragraph_center
-                                  img(src="/img/formuls/13.png", alt="alt")
-                                  | (3) или pV=const (4).
-                                p.content-paragraph.
-                                  Уравнение (4) называют законом Бойля-Мариотта.
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ti-Xd7Aeb3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                p Интерактивное демо изотермического процесса:
-                                <iframe  src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izotermicky_dej_Canvas.html?l=ru" style="border:none; width:100%; height: 500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
-                          li.nav__sub-item
-                            details
-                              summary 
-                                h4.text-underline Изобарный процесс
-                              .content
-                                p.content-paragraph.
-                                  Изобарным процессом называется процесс, протекающий при неизменном давлении
-                                p.content-paragraph.content-paragraph_center.
-                                  (P=const) и условии m = const и М = const.
-                                p.content-paragraph.
-                                  Если в некотором процессе не изменяются масса и давление газа, то уравнение Менделеева-Клапейрона для начального и конечного состояний будет: 
-                                p.content-paragraph.content-paragraph_center P#[sub 1]V#[sub 1] = RT#[sub 1] и P#[sub 2]V#[sub 2] = RT#[sub 2]
-                                p.content-paragraph.
-                                  При m = const P = const V / T = const или V1 / V2 = T1 / T2 (уравнение называется законом Гей-Люссака).
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZsId0_8MoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-8mJT5G9CWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                p Интерактивное демо изобарного процесса:
-                                <iframe src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izobaricky_dej_Canvas.html?l=ru" style="border:none; width:100%; height:500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
-                          li.nav__sub-item
-                            details
-                              summary 
-                                h4.text-underline Изохорный процесс
-                              .content
-                                p.content-paragraph.
-                                  Изохорический или изохорный процесс— это термодинамический процесс, который происходит при постоянстве объёма. В газах и жидкостяхосуществляется очень просто: для этого достаточно нагревать (охлаждать) вещество в сосуде, который неизменяет своего объёма.
-                                img(src='/img/formuls/14.png').content-img
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dvzip1U0iUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                p Интерактивное демо изотермического процесса:
-                                <iframe src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izochoricky_dej_Canvas.html?l=ru" style="border:none; width:100%; height:500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
+
+                    li.nav__sub-item
+                      details
+                        summary 
+                          h3.text-underline Изопроцессы
+                        .content
+                          ol.nav__sub-list
+                            li.nav__sub-item
+                              details
+                                summary 
+                                  h4.text-underline Изотермический процесс
+                                .content
+                                  p.content-paragraph.
+                                    Изотермическим процессом называется процесс, происходящий в неизменной массе газа при постоянной температуре. Запишем уравнение для двух состояний идеального газа: 
+                                  p.content-paragraph.content-paragraph_center.
+                                    p1V1=νRT(1), p2V2=νRT (2).
+                                  p.content-paragraph.
+                                    Разделим уравнение (2) на уравнение (1), получим уравнение изотермического процесса:
+                                  p.content-paragraph.content-paragraph_center
+                                    img(src="/img/formuls/13.png", alt="alt")
+                                    | (3) или pV=const (4).
+                                  p.content-paragraph.
+                                    Уравнение (4) называют законом Бойля-Мариотта.
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ti-Xd7Aeb3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  p Интерактивное демо изотермического процесса:
+                                  <iframe  src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izotermicky_dej_Canvas.html?l=ru" style="border:none; width:100%; height: 500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
+                            li.nav__sub-item
+                              details
+                                summary 
+                                  h4.text-underline Изобарный процесс
+                                .content
+                                  p.content-paragraph.
+                                    Изобарным процессом называется процесс, протекающий при неизменном давлении
+                                  p.content-paragraph.content-paragraph_center.
+                                    (P=const) и условии m = const и М = const.
+                                  p.content-paragraph.
+                                    Если в некотором процессе не изменяются масса и давление газа, то уравнение Менделеева-Клапейрона для начального и конечного состояний будет: 
+                                  p.content-paragraph.content-paragraph_center P#[sub 1]V#[sub 1] = RT#[sub 1] и P#[sub 2]V#[sub 2] = RT#[sub 2]
+                                  p.content-paragraph.
+                                    При m = const P = const V / T = const или V1 / V2 = T1 / T2 (уравнение называется законом Гей-Люссака).
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZsId0_8MoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/-8mJT5G9CWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  p Интерактивное демо изобарного процесса:
+                                  <iframe src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izobaricky_dej_Canvas.html?l=ru" style="border:none; width:100%; height:500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
+                            li.nav__sub-item
+                              details
+                                summary 
+                                  h4.text-underline Изохорный процесс
+                                .content
+                                  p.content-paragraph.
+                                    Изохорический или изохорный процесс— это термодинамический процесс, который происходит при постоянстве объёма. В газах и жидкостяхосуществляется очень просто: для этого достаточно нагревать (охлаждать) вещество в сосуде, который неизменяет своего объёма.
+                                  img(src='/img/formuls/14.png').content-img
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Dvzip1U0iUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  p Интерактивное демо изотермического процесса:
+                                  <iframe src="https://www.vascak.cz/data/android/physicsatschool/canvas/mf_izochoricky_dej_Canvas.html?l=ru" style="border:none; width:100%; height:500px;  text-align:center; margin-left:auto; margin-right:auto;"></iframe>
                     li.nav__sub-item
                       details
                         summary 
@@ -292,3 +295,4 @@ html(lang="ru")
                         
                   
       footer
+      script(src='/js/main.js')
