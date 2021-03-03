@@ -7,7 +7,7 @@
     "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "sass": "^1.20.3"
   }
 }
